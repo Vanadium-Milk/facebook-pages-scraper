@@ -151,6 +151,6 @@ The developers of this tool are not liable for any misuse, and it is your respon
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=SSujitX/facebook-pages-scraper&type=date&legend=top-left)](https://www.star-history.com/#SSujitX/facebook-pages-scraper&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/chart?repos=SSujitX/facebook-pages-scraper&type=date&legend=top-left&sealed_token=B4YLot1P-IIlvJ98r7p7hM9O1e8oUA3XPtevpc011R4Zzwv_FSyAxK5y596wURJ3SLg7vYApWqwucWdS3jtkmLfWHvWM9Wa0rzyILK4VEnES5SuyQIXrRM-yji4pEkjvIkZTgExlk8LZH5UFXxLfvWJMjPS30bWvuFFGhsD5Coi4KPS2CHrL2qhTx9LC)](https://www.star-history.com/?repos=SSujitX%2Ffacebook-pages-scraper&type=date&legend=top-left)
 
 ![](https://api.visitorbadge.io/api/VisitorHit?user=SSujitX&facebook-pages-scraper&countColor=%237B1E7A)
