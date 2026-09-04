@@ -280,9 +280,11 @@ class PageInfo:
             were_match = re.search(were_pattern, meta_description)
             were = were_match.group("were") if were_match else None
 
-            meta_data["page_likes_count"] = likes
-            meta_data["page_talking_count"] = talking
-            meta_data["page_were_here_count"] = were
+            strip_sep = str.maketrans('', '', ',.·')
+
+            meta_data["page_likes_count"] = int(likes.translate(strip_sep)) if likes else None
+            meta_data["page_talking_count"] = int(talking.translate(strip_sep)) if talking else None
+            meta_data["page_were_here_count"] = int(were.translate(strip_sep)) if were  else None
 
             return meta_data
 
