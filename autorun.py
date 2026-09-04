@@ -1,7 +1,7 @@
 """Run the page_info scraping from terminal arguments"""
 
 import argparse
-from datetime import datetime
+from datetime import datetime, UTC
 from csv import DictWriter
 from facebook_page_scraper import FacebookPageScraper
 
@@ -47,6 +47,7 @@ def _main():
         "page_rating",
         "page_services",
         "page_social_accounts",
+        "datetime"
     ]
     with open(path, "w", encoding="utf-8") as f:
         writer = DictWriter(f, fields)
@@ -54,6 +55,7 @@ def _main():
 
         for acc in args.accounts:
             page_info = FacebookPageScraper.PageInfo(f"https://www.facebook.com/{acc}")
+            page_info.update({"datetime": datetime.now(UTC).replace(microsecond=0).isoformat()})
             writer.writerow(page_info)
 
 if __name__ == "__main__":
