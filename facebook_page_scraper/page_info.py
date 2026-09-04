@@ -226,12 +226,14 @@ class PageInfo:
                                     "timeline_context_list_item_type"
                                 )
                                 if item_type in matching_types:
-                                    text = (
+                                    title = (
                                         timeline_context_item.get("renderer", {})
                                         .get("context_item", {})
                                         .get("title", {})
-                                        .get("text")
                                     )
+                                    if title is None:
+                                        continue
+                                    text = title.get("text")
                                     if text:
                                         key = matching_types[item_type]
                                         profile_info[key] = text
